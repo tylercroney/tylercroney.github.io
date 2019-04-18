@@ -1,0 +1,178 @@
+@charset "utf-8";
+
+.center-div-80
+{
+    margin: 0 auto;
+    width: 80%;
+}
+
+.player-align-right
+{
+    align="right";
+}
+
+.background-style
+{
+    background-color: #111111;
+}
+
+.img-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+.img-logo {
+    max-width: 600px;
+    width: 60%;
+    margin:auto;
+}
+
+.img-subtitle {
+    max-width: 600px;
+    width: 80%;
+    margin:auto;
+}
+
+.nav-icon {
+    width:5%;
+    height: auto;
+    max-width:200px;
+}
+
+*
+{
+  margin: 0; 
+  padding: 0; 
+  box-sizing: border-box; 
+  list-style: none;
+}
+
+a { text-decoration: none; }
+
+header 
+{
+  background-color: #111111; padding: 15px;
+}
+
+header .labelMenu 
+{ 
+  color: #FFF; 
+  transition: all 0.2s; 
+  width: 40px; 
+  height: 40px; 
+  display: inline-block;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 100px;
+}
+
+header .labelMenu:hover { background-color: #B27170; cursor: pointer;  }
+
+/* NAVGATION: */
+
+.logo-menu-op{
+    max-width: 80px;
+}
+
+.menu 
+{
+  position: fixed;
+  top: 0; left: -205px; bottom: 0;
+  min-width: 200px; max-width: 200px;
+  min-height: 100vh; max-height: 100vh;
+  background-color: #111111;
+  box-shadow: 0 0 16px rgba(0, 0, 0, .28);
+  transition: all 0.2s;
+  z-index: 50;
+}
+
+.menu h1 
+{
+  background-color: #111111;
+  text-align: center;
+  color: #B27170; 
+  padding: 10px;
+}
+
+.menu ul a { display: flex; padding: 10px;  color: #F5F5F5; transition: all 0.2s; }
+
+.menu a:hover { background-color: #DDD; }
+
+.menu ul:first-child { border-bottom: 1px solid #DDD; }
+/* A primeira <ul> do menu (primeiro filho (first-child)) */
+
+.menu ul a li:first-child { margin-right: 10px; }
+
+/* A primeira <li> de cada <ul> do menu (primeiro filho (first-child)) (Icones) */
+
+/* Cores Icones */
+
+.menu ul a .icone1 { color: #B27170; }
+.menu ul a .icone2 { color: #B27170; }
+.menu ul a .icone3 { color: #B27170; }
+.menu ul a .icone4 { color: #B27170; }
+.menu ul a .icone5 { color: #B27170; }
+
+.menu ul:last-child a:hover li:first-child { color: #111111; }
+
+/* Na ultima <ul>, quando o mouse passas sobre os links de cada uma, a primeira <li> muda a cor para um cinza mais escuro */
+
+.opacMenu
+{
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  z-index: 40; 
+}
+
+
+p 
+{
+  text-align: center; padding: 40px; color: #DDD; font-size: 50px; text-shadow: 1px 1px 1px #222;
+}
+
+p span { color: #ff3366; }
+
+.menu-text {
+    width:90px;
+}
+
+/*END OF NAV*/
+
+.latest-release {
+    width: 50%;
+    margin:auto;
+}
+
+.videos {
+    width: 20%;
+    margin:auto;
+}
+
+.video-container {
+    background-color:#F5F5F5;
+    width:99%;
+    border-radius: 2px;
+    margin:auto;
+    margin-bottom: 12px;
+}
+
+.video-player {
+    margin-top:12px;
+    margin-bottom: 30px;
+    
+}
+
+a i {
+    text-decoration:none;
+    color: #F5F5F5;
+}
+
+.social-link {
+    margin:auto;
+    max-width:600px;
+}
