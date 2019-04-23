@@ -159,11 +159,13 @@ p span { color: #ff3366; }
     border-radius: 2px;
     margin:auto;
     margin-bottom: 12px;
+    max-width: 900px;
 }
 
 .video-player {
     margin-top:12px;
     margin-bottom: 30px;
+    height: 300px;
     
 }
 
@@ -350,3 +352,18 @@ h3:hover {
     width:70%;
     margin:auto;
 }
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: red;
+    text-align: center;
+}
+
+.signup {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
