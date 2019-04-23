@@ -32,6 +32,7 @@
         
         <!--  Jquery  -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        
         <script>
 
           $(document).ready
@@ -59,8 +60,34 @@
           )
         </script>
         
+        <script>
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function() {scrollFunction()};
+
+            function scrollFunction() {
+              if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("myBtn").style.display = "block";
+              } else {
+                document.getElementById("myBtn").style.display = "none";
+              }
+            }
+
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+              document.body.scrollTop = 0; // For Safari
+              document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+            }
+        </script>        
+        <!--end of jquery-->
+        
+        <!--main container-->
         <div class="container-fluid">
             
+            <!--return to top button-->
+            <div class="d-block d-md-none">
+                <button onclick="topFunction()" id="myBtn" title="Go to top">Back To Top</button>
+            </div>
+            <!--end of return to top button-->
             
             <!--navbar 2-->            
             <header style="background-color:#212121">
@@ -68,7 +95,7 @@
             </header>
             
             <div class="menu">
-              <h1><!--<i class="fa fa-address-card"></i>--><img class="logo-menu-op" src="images/logo.png"></h1>
+              <a href="index.html"><h1><!--<i class="fa fa-address-card"></i>--><img class="logo-menu-op" src="images/logo.png"></h1></a>
               <nav>
                 <ul>
                     <a href="index.html">
@@ -95,9 +122,15 @@
                         <li class="icone5"><i class="fas fa-inbox fa-lg"></i></li>
                         <h5><em>CONTACT</em></h5>
                     </a>
-                </ul>
+                    
+                    <a href="https://traktrain.com/dysphoric" target="_blank">
+                        <li class="icone6"><i style="color:rgb(178,113,112);" class="fas fa-store-alt fa-lg"></i></li>
+                        <h5 style="color:rgb(178,113,112);"><em>BEAT STORE</em></h5>
+                    </a>
+                </ul>                                     
               </nav>
             </div>
+            
             <div class="opacMenu"></div>
             <!--end of navbar-->
             
@@ -107,8 +140,8 @@
                     <div class="col-xs-0 col-sm-0 col-md-4">
                         <div class="row">
                             <div class="col-8"></div>
-                            <div class="col-2 d-none d-md-block"><a href="https://facebook.com/dysphoricbeats"><i class="fab fa-facebook-square fa-3x"></i></a></div>
-                            <div class="col-2 d-none d-md-block"><a href="https://instagram.com/dysphoricbeats"><i class="fab fa-instagram fa-3x"></i></a></div>                                    
+                            <div class="col-2 d-none d-md-block"><a href="https://instagram.com/dysphoricbeats"><i class="fab fa-instagram fa-3x"></i></a></div>
+                            <div class="col-2 d-none d-md-block"><a href="https://facebook.com/dysphoricbeats"><i class="fab fa-facebook-square fa-3x"></i></a></div>                                    
                         </div>  
                     </div>                                
                     <div class="img-logo img-center mb-3 col-xs-12 col-sm-12 col-md-4">
@@ -122,9 +155,8 @@
                         </div>
                     </div>
                 </div>
-            
-                
-                <div class="row" style="height:30px">
+
+                <div class="row" style="height:30px;">
                     <div class="col-xs-0 col-sm-0 col-md-4"></div>
                     <div class="container img-center img-subtitle mb-5 col-xs-12 col-sm-12 col-md-4">
                         <img src="images/subtitle.png" width="100%">
@@ -135,7 +167,11 @@
                 <!--desktop menu-->
                 <div class="menu-desktop d-none d-md-block mt-3">
                     <div class="row">
-                        <div class="col-3">
+                        <div class="col-1">
+                        
+                        </div>
+                        
+                        <div class="col-2">
                             <div class="card-img text-center">
                                 <!--
                                 <a href="services.html"><img class="services-menu" src="images/menu/services.png"></a>
@@ -145,63 +181,67 @@
                             </div>
                         </div>
 
-                        <div class="col-3">
+                        <div class="col-2">
                             <div class="card-img text-center">
                                 <a href="music.html"><h2 class="menu-hover"><em>MUSIC</em></h2></a>
                             </div>
                         </div>
 
-                        <div class="col-3">
+                        <div class="col-2">
                             <div class="card-img text-center">
                                 <a href="videos.html"><h2 class="menu-hover"><em>VIDEOS</em></h2></a>
                             </div>
                         </div>
 
-                        <div class="col-3">
+                        <div class="col-2">
                             <div class="card-img text-center">
-                                <a href="contact.html"><h2 class="menu-hover"><em>CONTACT</em></h2></a>
+                                <a href="https://traktrain.com/dysphoric"><h2 class="menu-hover"><em>STORE</em></h2></a>
                             </div>
+                        </div>
+                        
+                        <div class="col-2">
+                            <div class="card-img text-center">
+                                <a href="contact.html"><h2 class="menu-hover-active"><em>CONTACT</em></h2></a>
+                            </div>
+                        </div>
+                        
+                        <div class="col-1">
+                        
                         </div>
                     </div>            
                 </div>
                 <!--end of desktop menu-->
             </div>
             
-            <!--end of logo header-->
+            <!--end of logo header-->                        
             
-            <!--social media links-->
-            
-                <!--mobile-->
+            <!--social links mobile-->
             <div class="row social-link d-block d-md-none mt-3">
                 <div class="col-12 text-center text-light">
                     <div class="row">
-                        <div class="col-3"><a href="https://facebook.com/dysphoricbeats"><i class="fab fa-facebook-square fa-3x"></i></a></div>
-                        <div class="col-3"><a href="https://instagram.com/dysphoricbeats"><i class="fab fa-instagram fa-3x"></i></a></div>
-                        <div class="col-3"><a href="https://youtube.com/dysphoricbeats"><i class="fab fa-youtube-square fa-3x"></i></a></div>
-                        <div class="col-3"><a href="https://soundcloud.com/dysphoricbeats"><i class="fab fa-soundcloud fa-3x"></i></a></div>                
+                        <div class="col-3 social-mobile-color"><a href="https://instagram.com/dysphoricbeats"><i class="fab fa-instagram fa-4x"></i></a></div>
+                        <div class="col-3 social-mobile-color"><a href="https://facebook.com/dysphoricbeats"><i class="fab fa-facebook-square fa-4x"></i></a></div>
+                        <div class="col-3 social-mobile-color"><a href="https://youtube.com/dysphoricbeats"><i class="fab fa-youtube-square fa-4x"></i></a></div>
+                        <div class="col-3 social-mobile-color"><a href="https://soundcloud.com/dysphoricbeats"><i class="fab fa-soundcloud fa-4x"></i></a></div>                
                     </div>                    
                 </div>
-            </div>  
-                <!--end of mobile-->
-            <!--end of social media links-->
-            
-            
-            
+            </div>
+            <!--end of social links mobile-->
             
             <!--latest releases-->
             <div class="container">
                 <br>
                 <br>
                 <div class="row">
-                    <div class="col-3">
+                    <div class="col-0">
                         
                     </div>
                     
-                    <div class="col-6 text-center text-light">
+                    <div class="col-12 text-center text-light">
                         <a href="music.html"><h1 style="color:rgb(178,113,112); font-size:300%;"><em>LATEST RELEASES</em></h1></a>
                     </div>
                     
-                    <div class="col-3">
+                    <div class="col-0">
                         
                     </div> 
                 </div>
@@ -218,14 +258,14 @@
                     <a href="services.html"><h1 style="color:rgb(178,113,112); font-size:300%;"><em>SERVICES</em></h1></a>
                 </div>
                 <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-4 mt-4">
+                    <div class="col-xs-12 col-sm-12 col-md-4 mt-2 p-3">
                         <h3 style="color:rgb(245,245,245)"><em><b><u>RECORDING</u></b></em></h3>
                         <br>
                         <h6 style="color:rgb(245,245,245)"><em><b>CLEAR PROFESSIONAL-LEVEL AUDIO RECORDING</b></em></h6>
                         <h6 style="color:rgb(245,245,245)"><em><b>VOCAL MIXING & AUTOTONE AVAILABLE</b></em></h6>
                     </div>
                     
-                    <div class="col-xs-12 col-sm-12 col-md-4 text-center mt-4">
+                    <div class="col-xs-12 col-sm-12 col-md-4 text-center mt-2 p-3">
                         <h3 style="color:rgb(245,245,245)"><em><b><u>PRODUCTION</u></b></em></h3>
                         <br>
                         <h6 style="color:rgb(245,245,245)"><em><b>HIGH-QUALITY INSTRUMENTALS</b></em></h6>
@@ -233,7 +273,7 @@
                         <h6 style="color:rgb(245,245,245)"><em><b>CUSTOM WORK AVAILABLE</b></em></h6>
                     </div>
                                         
-                    <div class="col-xs-12 col-sm-12 col-md-4 mt-4">
+                    <div class="col-xs-12 col-sm-12 col-md-4 mt-2 p-3">
                         <h3 style="color:rgb(245,245,245)"><em><b><u>ENGINEERING</u></b></em></h3>
                         <br>
                         <h6 style="color:rgb(245,245,245)"><em><b>MIXING & MASTERING TO CLEAN UP ANY TRACK</b></em></h6>
@@ -255,31 +295,20 @@
                     </div>
                 </div>
             
-                <div class="row video-container text-center mt-3">                    
-                    <div class="col-12">
+                <div class="row video-container text-center mt-2">                    
+                    <div class="col-xl-6">
                         <div class="video-player">
-                            <iframe class="p-3" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" width="95%" height="350px" type="text/html" src="https://www.youtube.com/embed/dRNNcMpWTFk?autoplay=0&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&origin=https://youtubeembedcode.com"></iframe>
+                            <iframe class="p-3 videos" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" width="95%" type="text/html" src="https://www.youtube.com/embed/dRNNcMpWTFk?autoplay=0&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&origin=https://youtubeembedcode.com"></iframe>
                         </div>                            
-                    </div>
+                    </div>                    
                     
-                    
-                    
-                    <div class="col-12">
+                    <div class="col-xl-6">
                         <div class="video-player">
-                            <iframe class="p-3" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"width="95%" height="350px" type="text/html" src="https://www.youtube.com/embed/-EMFGFLOwao?autoplay=0&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&origin=https://youtubeembedcode.com"></iframe>
-                        </div>                            
-                    </div>
-                    
-                    <div class="col-12">
-                        <div class="video-player">
-                            <iframe class="p-3" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"width="95%" height="350px" type="text/html" src="https://www.youtube.com/embed/m58R3lOOwAc?autoplay=0&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&origin=https://youtubeembedcode.com"></iframe>
+                            <iframe class="p-3 videos" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"width="95%" type="text/html" src="https://www.youtube.com/embed/m58R3lOOwAc?autoplay=0&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&origin=https://youtubeembedcode.com"></iframe>
                         </div>                            
                     </div>                      
                 </div>
-                
-                <div class="row video-container text-center mt-3">                    
-                                                               
-                </div>
+                    
             </div>
             
             <!--end of videos-->
@@ -310,7 +339,8 @@
                 </footer>        
             </div>
             <!--end of footer-->
-        </div>                
+        </div>
+        <!--end of main container-->
     </body>
 </html>
 

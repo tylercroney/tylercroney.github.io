@@ -114,6 +114,7 @@ header .labelMenu:hover { background-color: #B27170; cursor: pointer;  }
 .menu ul a .icone3 { color: #B27170; }
 .menu ul a .icone4 { color: #B27170; }
 .menu ul a .icone5 { color: #B27170; }
+.menu ul a .icone6 { color: #B27170; }
 
 .menu ul:last-child a:hover li:first-child { color: #111111; }
 
@@ -149,8 +150,9 @@ p span { color: #ff3366; }
 }
 
 .videos {
-    width: 20%;
+    width: 100%;
     margin:auto;
+    height: 100%;
 }
 
 .video-container {
@@ -169,9 +171,23 @@ p span { color: #ff3366; }
     
 }
 
+.video-player-2 {
+    margin-top:12px;
+    margin-bottom: 30px;
+    
+}
+
 a i {
     text-decoration:none;
     color: #F5F5F5;
+}
+
+.social-mobile-color {
+    color:rgb(245,245,245)
+}
+
+.social-mobile-color:hover {
+    color:rgb(178,113,112)
 }
 
 .social-link {
@@ -227,8 +243,8 @@ a i {
 /*end of img hover*/
 
 .image-slider {
-    width: 80%;
-    max-width:1100px;
+    width: 95%;
+    max-width:1000px;
     margin: auto;
 }
 
@@ -259,8 +275,8 @@ a i {
 }
 
 .container-contact {
-    width: 80%;
-    max-width:1200px;s
+    width: 100%;
+    max-width:1200px;
     margin: auto;
 }
 
@@ -321,7 +337,7 @@ h3:hover {
 }
 
 .labelMenu {
-    position:fixed;
+
     color:rgb(178,113,112);
 }
 
@@ -351,6 +367,7 @@ h3:hover {
 .contact-info-bottom {
     width:70%;
     margin:auto;
+    color:rgb(245,245,245)
 }
 
 .footer {
@@ -367,3 +384,61 @@ h3:hover {
     margin-bottom: 40px;
 }
 
+.carousel-inner {
+    margin:auto;
+    width: 100%;
+}
+
+
+
+/*text query*/
+body {
+  /* Never get smaller than this */
+  font-size: 12px;
+}
+
+@media (min-width:600px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+@media (min-width:800px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+@media (min-width:1000px) {
+  body {
+    /* Never get larger than this */
+    font-size: 14px;
+  }
+}
+
+/*back to top button*/
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    background-color:rgb(178,113,112);
+    color:rgb(245,245,245);
+    padding: 15px;
+    border-radius: 4px;
+    opacity:.9;
+}
+
+#myBtn:hover {
+    background-color: #555;
+    opacity:.5;
+}
+/*end of button*/
+
+a { 
+    color: inherit; 
+} 
