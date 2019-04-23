@@ -370,12 +370,11 @@ h3:hover {
     color:rgb(245,245,245)
 }
 
-.footer {
+footer {
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: red;
     text-align: center;
 }
 
