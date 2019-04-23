@@ -154,8 +154,8 @@ p span { color: #ff3366; }
 }
 
 .video-container {
-    background-color:#F5F5F5;
-    width:99%;
+
+    width:100%;
     border-radius: 2px;
     margin:auto;
     margin-bottom: 12px;
@@ -336,3 +336,7 @@ h3:hover {
     
 }
 
+.services-index {
+    width:85%;
+    margin:auto;
+}
