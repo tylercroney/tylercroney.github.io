@@ -24,13 +24,13 @@
 }
 
 .img-logo {
-    max-width: 600px;
+    max-width: 500px;
     width: 60%;
     margin:auto;
 }
 
 .img-subtitle {
-    max-width: 600px;
+    max-width: 500px;
     width: 80%;
     margin:auto;
 }
@@ -232,8 +232,8 @@ a i {
 }
 
 .services-content {
-    width: 80%;
-    max-width: 900px;
+    width: 87%;
+    max-width: 1000px;
     margin: auto;
 }
 
@@ -285,3 +285,54 @@ a i {
     max-width:1200px;
     margin: auto;
 }
+
+p, h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1px;
+}
+
+.menu-hover {
+    color:rgb(245,245,245)
+}
+
+.menu-hover-active {
+    color:rgb(178,113,112)
+}
+
+h2:hover {
+    color:rgb(178,113,112)
+}
+
+h3:hover {
+    color:rgb(178,113,112)
+}
+
+.latest-releases {
+    width: 90%;
+    margin: auto;
+    max-width: 900px;
+}
+
+.container-prod {
+    width: 80%;
+    margin: auto;
+    max-width: 900px;
+}
+
+.labelMenu {
+    position:fixed;
+    color:rgb(178,113,112);
+}
+
+.contact-info {
+    color:rgb(178,113,112);
+    margin:auto;
+}
+
+.social-container {
+    width: 60%;
+    margin:auto;
+    max-width: 500px;
+    
+}
+
